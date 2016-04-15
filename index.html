@@ -21,3 +21,148 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+  
+<div class="wrap">
+  
+  <header class="header side">
+    
+    <h1 class="brand"><a href="#">Ace Trainer</a></h1>
+    
+    <nav class="menu">
+      
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="single-article.html">All Articles</a>
+          <ul>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Tips 'n Tricks</a></li>
+            <li><a href="#">Inspiration</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      
+    </nav>
+    
+    <div class="header-foot">
+      <p class="copy">© 2015 ACE - All Rights Reserved</p>
+      <p class="d-logo-simon">Design by<span class="simon-logo"></span></p>
+    </div>
+    
+  </header>
+  
+  <div class="main">
+    
+    <div class="intro-main">
+      
+      <div class="intro-image"></div>
+            
+      <div class="intro-block" id="owl-demo">
+        
+        <div class="intro-item"><h3><span>Redefine limits.</span><span>Redefine what’s possible.</span><span>Redefine what’s YOU!</span></h3></div>
+        <div class="intro-item"><h3><span>No more shortcuts!</span><span>No more excuses!</span><span>No more trends!</span></h3></div>
+        <div class="intro-item"><h3>The change begins with you!</h3></div>
+              
+      </div>
+      
+    </div>
+        
+    <div class="articles-section">
+      
+      <div class="object">
+        <img src="assets/bild-01.jpg" class="img-title">
+        <div class="object-meta">
+          <a href="#">20/08/2015</a>
+          <a href="#">Food</a>
+        </div>
+        <div class="title-block">
+          <h3 class="article-title">Name of this article</h3>
+        </div>
+      </div>
+      <div class="object">
+        <img src="assets/bild-02.jpg" class="img-title">
+        <div class="object-meta">
+          <a href="#">20/08/2015</a>
+          <a href="#">Food</a>
+        </div>
+        <div class="title-block">
+          <h3 class="article-title">Name of this article</h3>
+        </div>
+      </div>
+      <div class="object">
+        <img src="assets/bild-03.jpg" class="img-title">
+        <div class="object-meta">
+          <a href="#">20/08/2015</a>
+          <a href="#">Inspiration</a>
+        </div>
+        <div class="title-block">
+          <h3 class="article-title">Name of this article</h3>
+        </div>
+      </div>
+      
+      <div class="object">
+        <img src="assets/bild-04.jpg" class="img-title">
+        <div class="object-meta">
+          <a href="#">Food</a>
+        </div>
+        <div class="title-block">
+          <h3 class="article-title">Name of this article</h3>
+        </div>
+      </div>
+      <div class="object">
+        <img src="assets/bild-05.jpg" class="img-title">
+        <div class="object-meta">
+          <a href="#">Food</a>
+        </div>
+        <div class="title-block">
+          <h3 class="article-title">Name of this article will be super long probably!</h3>
+        </div>
+      </div>
+      <div class="object">
+        <img src="assets/bild-06.jpg" class="img-title">
+        <div class="object-meta">
+          <a href="#">Training</a>
+        </div>
+        <div class="title-block">
+          <h3 class="article-title">Name of this article</h3>
+        </div>
+      </div>
+      
+    </div>
+    
+    <a href="#" class="button button-middle button-on-light">Load More</a>  
+    
+  </div>
+  
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+      pagination : true,
+      autoPlay : true,
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+</script>
+  
+</body>
+</html>
