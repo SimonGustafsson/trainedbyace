@@ -1,0 +1,26 @@
+---
+layout: home-page
+---
+
+<div class="main">
+        
+    <div class="articles-section">
+
+    {% for post in site.posts %}
+      <div class="object">
+        <img src="{{ site.baseurl }}/images/{{ post.image }}">
+        <div class="object-meta">
+          <span>{{ post.date | date: "%-d/%-m/%-Y" }}</span>
+          <span>{{ post.categories }}</span>
+        </div>
+
+        <div class="title-block">
+          <h2 class="article-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        </div>
+      </div>
+    {% endfor %}
+    
+    </div>
+    
+  </div>
+</div>
