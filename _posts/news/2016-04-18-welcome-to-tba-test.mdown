@@ -3,5 +3,7 @@ layout: post
 title:  "Welcome to TBA test"
 date:   2016-04-18
 categories: news
+
+image: bild-05.jpg
 ---
 

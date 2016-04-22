@@ -14,19 +14,6 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
 /**
  * Images
  */
@@ -47,26 +34,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-
 
 
 /**
@@ -135,7 +102,7 @@ pre {
 
 html, body {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
 }
 
@@ -166,4 +133,12 @@ a {
     width: 100%;
     height: 100%;
     display: block;
+
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+  }
 }
