@@ -8,7 +8,7 @@ layout: home-page
 
     {% for post in site.categories.food limit:21 %}
       <div class="object">
-        <img src="{{ site.baseurl }}/images/{{ post.image }}">
+        <img src="{{ site.baseurl | prepend: site.url }}/images/{{ post.image }}">
         <div class="object-meta">
           <span>{{ post.date | date: "%-d/%-m/%-Y" }}</span>
           <span>{{ post.categories }}</span>
