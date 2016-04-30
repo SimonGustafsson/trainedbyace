@@ -5,3 +5,38 @@ date:   2016-04-18
 categories: news
 ---
 
+#Hello world to TBA test post!
+
+
+Hello everyone and welcome to my test post for the Trained by Ace site! This is the place to follow my journey toward my first title in the Men's Physique division and my Pro card. This is the place to follow me and my adventure and hopefully this is the place for the beguinning of yours. PEACE OUT CUB SCOUT! 
+
+
+#My main heading
+{: .intro }
+
+This is my initial paragraph. In it I’d like to provide a link to the [Jekyll homepage](http://jekyllrb.com/ "Jekyll"). I want to add **bold** and *italic* formatting to text as well using the `strong` and `emphasis` tags.
+
+This is another paragraph. I’d like to follow it with an unordered list.
+
+* item 1
+* item 2
+* item 3
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+> This is a blockquote.
+
+
+1. Im the best
+2. Simon is a beast
+3. Simon and lollo is drinking wine. NOTE: Red wine! 
+
+
+I want to wrap **this text** in a strong tag and *this text* in an emphasis tag
+
+
+
