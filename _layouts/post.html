@@ -1,15 +1,23 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+<div class="main">
+		
+		<div class="article-meta">
+			<span class="article-date">{{ page.date | date: "%-d/%-m/%-Y" }}</span>
+			
+			<div class="article-posted-in">
+				<span>Posted in</span>
+				<a href="{{ site.baseurl }}/{{ page.categories }}">{{ page.categories }}</a>			
+			</div>
+		</div>
 
-</div>
+
+		<article class="single-article">
+			<h2 class="article-headline">{{ page.title }}</h2>
+			{{ page.content | markdownify }}
+		</article>
+		
+	</div>

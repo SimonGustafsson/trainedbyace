@@ -13,29 +13,6 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
-
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
 
 /**
  * Images
@@ -57,51 +34,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
-
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
 
 
 /**
@@ -150,26 +82,6 @@ pre {
 
 
 
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
 
 
 /**
@@ -185,20 +97,48 @@ pre {
 }
 
 
+/**
+    GENERAL */
+
+html, body {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgba(0,0,0, 0.5);
+    
+    background: rgba(255,255,255, 1);
+    
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+a {
+    transition: ease-in-out all 0.3s;
+    -webkit-transition: ease-in-out all 0.3s;
+    -moz-transition: ease-in-out all 0.3s;
+}
+
 
 /**
- * Icons
- */
-.icon {
+    WRAP */
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: block;
 
-        path {
-            fill: $grey-color;
-        }
-    }
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+  }
 }

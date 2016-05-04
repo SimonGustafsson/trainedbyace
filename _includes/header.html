@@ -2,22 +2,22 @@
   
   <header class="header side">
     
-    <h1 class="brand"><a href="{{ site.baseurl }}">Ace Personal Trainer</a></h1>
+    <a href="/"><h1 class="brand">Ace Personal Trainer</h1></a>
     
     <nav class="menu">
       
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="single-article.html">All Articles</a>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/">Home</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/all-articles">All Articles</a>
           <ul>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Tips 'n Tricks</a></li>
-            <li><a href="#">Inspiration</a></li>
+            <li><a href="{{ site.baseurl | prepend: site.url }}/training">Training</a></li>
+            <li><a href="{{ site.baseurl | prepend: site.url }}/food">Food</a></li>
+            <li><a href="{{ site.baseurl | prepend: site.url }}/tips-n-tricks">Tips 'n Tricks</a></li>
+            <li><a href="{{ site.baseurl | prepend: site.url }}/inspiration">Inspiration</a></li>
           </ul>
         </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/about">About</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/contact">Contact</a></li>
       </ul>
       
     </nav>
